@@ -1,0 +1,16 @@
+class Tester{
+	public static void main(String[] args) {
+		int a = 1, b = 4, c = 6;
+		double discriminant = (b * b) - 4 * a * c;
+		double r1 = (-b + discriminant)/2 * a;
+		double r2 = (-b - discriminant)/2 * a;
+		if(discriminant == 0) {
+			System.out.println(r1);
+		}	
+		else if(discriminant > 0) {
+			System.out.println(r1 + "/n" + r2);
+		}
+		else
+			System.out.println("The equation has no real roots");
+	}
+}
